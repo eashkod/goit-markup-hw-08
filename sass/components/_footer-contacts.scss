@@ -1,0 +1,38 @@
+.contacts {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-items: center;
+    background-color: #2f303a;
+}
+
+.footer__container {
+    display: flex;
+}
+
+.footer__logo {
+    margin-right: 156px;
+}
+
+.contacts__address {
+    font-style: normal;
+}
+
+.contacts__list {
+    margin-top: 20px;
+}
+
+.contacts__item {
+    margin-top: 9px;
+&:first-child {
+        margin-top: 0;
+    }
+}
+
+.contact__addres-link {
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact__link-color {
+    color: #ffffff;
+}
