@@ -1,35 +1,33 @@
-.features {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        @include desktop{
-            padding-top: 94px;
-            padding-bottom: 94px;
-        }
-    }
-
+.features__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .features__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 
-  @include desktop{
-   flex-wrap: nowrap; 
+  @include desktop {
+    flex-wrap: nowrap;
   }
 }
 
 .features__box {
   padding: 25px 145px;
   background-color: #f5f4fa;
-      margin: 0 auto;
+  margin: 0 auto;
 
-  @include desktop{
-  width: 270px;
-  height: 120px;
-  background: #f5f4fa;
-  padding: 25px 100px;
+  @include desktop {
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    padding: 25px 100px;
   }
-
 }
 
 .features__item {
@@ -40,10 +38,9 @@
     width: calc((100% - 30px) / 2);
   }
 
-        @include desktop {
-            width:100%;
-        }
-
+  @include desktop {
+    width: 100%;
+  }
 }
 
 .features__icon {

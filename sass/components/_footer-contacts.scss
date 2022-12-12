@@ -1,23 +1,49 @@
 .contacts {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    align-items: center;
     background-color: #2f303a;
+
 }
 
-.footer__container {
+.footer__container{
+    @include desktop{
+    display: flex;}
+}
+
+.footer-tablet{
+
+    @include tablet{
     display: flex;
+    justify-content: space-evenly;}
+        
+    @include desktop {
+        justify-content: flex-start;
+        width:50%;
+    }
+
 }
 
 .footer__logo {
-    margin-right: 156px;
+
+    @include desktop{
+    margin-right: 156px;}
 }
 
 .contacts__address {
+    text-align: center;
     font-style: normal;
-}
+    margin-bottom: 60px;
+    @include desktop{
+        text-align: left;
+        margin-bottom: 0;
+    }
+    }
+
+
+
 
 .contacts__list {
+    @include mobile {
+            margin-top: 28px;
+        }
     margin-top: 20px;
 }
 

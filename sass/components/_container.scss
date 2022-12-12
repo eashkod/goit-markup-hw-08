@@ -1,8 +1,18 @@
 
 .container {
     width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
         padding-left: 15px;
         padding-right: 15px;
         margin: 0 auto;
+        outline: 2px solid red;
+    
+        @include desktop {
+            width: 1200px;
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
 
 }

@@ -1,5 +1,13 @@
+
+
+
 .footer-soc__box {
+    @include mobile{
+        margin-bottom: 60px;
+    }
+    @include desktop {
     margin-right: 93px;
+margin-bottom: 0;}
 }
 
 .footer-soc__text {
@@ -9,22 +17,23 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    align-items: center;
+    text-align: center;
     color: #ffffff;
     padding-top: 12px;
     margin-bottom: 20px;
 }
 
 .footer-soc__list {
-    display: flex;
-    justify-content: center;
+display: flex;
     gap: 10px;
     margin-top: 16px;
+   justify-content: center;
 }
 
 .footer-soc__item {
     width: 44px;
     height: 44px;
+    align-items: center;
 }
 
 .footer-soc__link {

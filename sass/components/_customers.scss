@@ -1,12 +1,32 @@
+.customers__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
 .customers__list {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
+    
+    @include desktop {
+        flex-wrap: nowrap;
+    }
 }
 
 .customers__link {
-    width: 170px;
-    height: 92px;
+width: 100%;
+
+    @include desktop {
+        width: 170px;
+            height: 92px;
+        }
+
     border: 1px solid #afb1b8;
     border-radius: 4px;
     display: flex;
@@ -15,6 +35,18 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {border-color:var(--hover-color);}
 }
+.customers__item{
+            width: calc((100% - 30px) / 2);
+                text-align: center;
+            
+            @include tablet{
+            width: calc((100% - 60px) / 3);
+                text-align: center;
+            }
+                @include desktop {
+                    width: 100%;}
+}
+
 
 .customers__icon {
     fill: #afb1b8;

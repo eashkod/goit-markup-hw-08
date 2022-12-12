@@ -1,6 +1,10 @@
 .work__section{
+@media screen and (max-width:1200px) {
+    display: none;
+}
 padding-top: 24px;
 padding-bottom: 94px;
+
 }
 
 .work__list {
