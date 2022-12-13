@@ -4,41 +4,27 @@
 }
 
 .footer__container{
-    @include desktop{
-    display: flex;}
+    @include desktop {
+            display: flex;
+        }
+
 }
 
 .footer-tablet{
-
     @include tablet{
-    display: flex;
-    justify-content: space-evenly;}
-        
-    @include desktop {
-        justify-content: flex-start;
-        width:50%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 60px;
     }
 
 }
 
-.footer__logo {
-
-    @include desktop{
-    margin-right: 156px;}
-}
-
-.contacts__address {
+.contacts__address{
     text-align: center;
-    font-style: normal;
-    margin-bottom: 60px;
     @include desktop{
-        text-align: left;
-        margin-bottom: 0;
+        margin-right: 94px;
     }
-    }
-
-
-
+}
 
 .contacts__list {
     @include mobile {

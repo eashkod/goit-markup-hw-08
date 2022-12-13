@@ -1,22 +1,4 @@
-.menu-open-btn {
-  width: 40px;
-  height: 40px;
-  margin-left: auto;
 
-  @include tablet {
-    display: none;
-  }
-}
-
-.menu-open-btn__icon {
-  .menu-open-btn:hover & {
-    fill: var(--hover-color);
-  }
-
-  .menu-open-btn:focus & {
-    fill: var(--hover-color);
-  }
-}
 
 .modile-menu {
   position: fixed;
@@ -24,8 +6,10 @@
   z-index: 1;
   width: 100vw;
   height: 100vh;
+  padding-top: 48px;
+    padding-bottom: 48px;
   padding-left: 40px;
-  padding-bottom: 48px;
+padding-right: 83px;
   background-color: #ffffff;
   >.container{
     height: 100%;
@@ -39,12 +23,6 @@
   display: none;
 }
 }
-.modile-menu__container {
-   padding-top: 48px;
-   padding-bottom: 48px;
-   padding-left: 40px;
-}
-
 
 .modile-menu-close {
   position: absolute;
@@ -118,7 +96,6 @@
 .mobile-menu-soc {
   display: flex;
   justify-content: space-between;
-  margin-right: 83px;
   align-items: flex-end;
   margin-top: 64px;
 }

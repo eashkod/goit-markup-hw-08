@@ -1,26 +1,18 @@
-.customers__container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-    @include desktop {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
-}
 
 .customers__list {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    
     @include desktop {
-        flex-wrap: nowrap;
-    }
+            flex-wrap: nowrap;
+        }
 }
 
 .customers__link {
 width: 100%;
+    padding-top: 16px;
+     padding-bottom:16px;
 
     @include desktop {
         width: 170px;
@@ -36,14 +28,15 @@ width: 100%;
     &:hover {border-color:var(--hover-color);}
 }
 .customers__item{
-            width: calc((100% - 30px) / 2);
+
+width: calc((100% - 30px) / 2);
                 text-align: center;
             
-            @include tablet{
+ @include tablet{
             width: calc((100% - 60px) / 3);
-                text-align: center;
+
             }
-                @include desktop {
+ @include desktop {
                     width: 100%;}
 }
 
