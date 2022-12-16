@@ -871,6 +871,8 @@ body {
 
 .contacts {
   background-color: #2f303a;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1200px) {
