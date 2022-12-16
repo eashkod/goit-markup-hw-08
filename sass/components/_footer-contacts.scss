@@ -13,8 +13,11 @@
 .footer-tablet{
     @include tablet{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         margin-bottom: 60px;
+    }
+    @include desktop{
+        margin-bottom: 0;
     }
 
 }

@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header header__portfolio">
+    <header class="header">
       <div class="container header__container">
         <a class="logo header__logo link" href="./index.html"
           >Web<span class="logo logo--color-black">Studio</span></a
@@ -31,10 +31,12 @@
         <nav class="navigation header__navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link link" href="./index.html">Студія</a>
+              <a class="navigation__link link " href="./index.html">Студія</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link link current" href="#">Портфоліо</a>
+              <a class="navigation__link link current" href="№"
+                >Портфоліо</a
+              >
             </li>
             <li class="navigation__item">
               <a class="navigation__link link" href="#">Контакти</a>
@@ -64,7 +66,91 @@
             </a>
           </li>
         </ul>
+
+        <batton type="button" class="menu-open-btn btn"data-mobmenu-open>
+          <svg class="menu-open-btn__icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-mob-menu-open"></use>
+          </svg>
+        </batton>
       </div>
+
+      <div class="modile-menu is-hidden"data-mobmenu>
+        <div class="container modile-menu__container">
+        <button type="button" class="modile-menu-close btn" data-mobmenu-close>
+          <svg class="modile-menu-close__icon" width="18.67" height="18.67">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu__navigation">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link current" href="#">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+        <ul class="mobile-menu-contact list">
+          <li class="mobile-menu-contact__item">
+            <a class="mobile-menu-contact__link-tel link" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
+          </li>
+
+          <li class="mobile-menu-contact__item">
+            <a
+              class="mobile-menu-contact__link-mail link"
+              href="mailto:info@devstudio.com"
+            >info@devstudio.com
+            </a>
+          </li>
+
+
+        </ul>
+        <ul class="mobile-menu-soc">
+          <li class="mobile-menu-cos__item">
+            <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mobile-menu-soc__link Link"
+            >Instagram</a>
+          </li>
+          <li class="mobile-menu-cos__item">
+            <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mobile-menu-soc__link Link"
+            >Twitter</a>
+          </li>
+          <li class="mobile-menu-cos__item">
+            <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mobile-menu-soc__link Link"
+            >Facebook</a>
+          </li>
+          <li class="mobile-menu-cos__item">
+            <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mobile-menu-soc__link Link"
+            >LinkedIn</a>
+          </li>
+         </ul>
+        </div>
+
     </header>
 
     <main>
@@ -301,11 +387,11 @@
       </section>
     </main>
 
-    <footer class="contacts">
+    <footer class="contacts section">
       <div class="container footer__container">
         <h2 class="contacts-title visually-hidden">Контакти</h2>
-
-        <address class="contacts__address">
+        <div class="footer-tablet">
+<address class="contacts__address">
           <a class="logo footer__logo link" href="./index.html"
             >Web<span class="logo logo--color-white">Studio</span></a
           >
@@ -370,6 +456,8 @@
             </li>
           </ul>
         </div>
+        </div>
+        
         <div class="subscription">
           <p class="subscription__text">Підпишіться на розсилку</p>
           <form class="subscription__form">

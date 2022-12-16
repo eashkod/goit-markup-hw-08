@@ -1,12 +1,19 @@
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
+  @include tablet{
+    padding-top: 21px;
+    padding-bottom: 20px;
+  }
+  @include desktop{
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 
 .header__container {
   display: flex;
   align-items: center;
-      outline: 2px solid yellow;
 }
 
 .header__logo {
@@ -81,6 +88,7 @@
     border-radius: 2px;
     bottom: -1px;
   }
+
 }
 
 .navigation-contact {
@@ -113,7 +121,13 @@
   }
 }
 .navigation-contact__item {
-  margin-bottom: 10px;
+  &:first-child{
+    margin-bottom: 10px;
+  }
+ @include desktop{
+  &:first-child{
+  margin-bottom: 0;}
+ } 
 }
 
 .navigation-contact__icon {
