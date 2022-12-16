@@ -2,12 +2,12 @@
 
 
 .footer-soc__box {
-    @include mobile{
         margin-bottom: 60px;
-    }
+
+
     @include desktop {
     margin-right: 93px;
-margin-bottom: 0;}
+margin-bottom:0;}
 }
 
 .footer-soc__text {
