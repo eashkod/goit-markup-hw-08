@@ -2,29 +2,27 @@
   width: 100%;
   padding-top: 118px;
   padding-bottom: 118px;
-    background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      flex-grow: 1;
-      background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-grow: 1;
+  background-color: #c4c4c4;
   background-image: var(--gra), url(../images/hero-mobile-img.jpg);
   @include retina {
     background-image: var(--gra), url(../images/hero-mobile-img@2x.jpg);
   }
 
-
-  @include tablet {
+  @include mobile {
     background-image: var(--gra), url(../images/hero-tablet-img.jpg);
     @include retina {
       background-image: var(--gra), url(../images/hero-tablet-img@2x.jpg);
     }
   }
 
-  @include desktop {
+  @include tablet {
     background-image: var(--gra), url(../images/hero-img.jpg);
     @include retina {
-      background-image: var(--gra),
-        url(../../images/hero-Img@2x.jpg);
+      background-image: var(--gra), url(../../images/hero-Img@2x.jpg);
     }
   }
 
