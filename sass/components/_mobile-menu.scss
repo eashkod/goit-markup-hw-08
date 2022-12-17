@@ -1,6 +1,9 @@
 .modile-menu {
   position: fixed;
   top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   z-index: 1;
   width: 100vw;
   height: 100vh;
@@ -73,7 +76,6 @@
 }
 
 .mobile-menu-contact__link-tel {
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -81,10 +83,9 @@
   line-height: 1.17;
   color: #2196f3;
 
-@media screen and (min-width: 420px){
-  font-size: 34px;
-}
-
+  @media screen and (min-width: 420px) {
+    font-size: 34px;
+  }
 }
 
 .mobile-menu-contact__link-mail {
@@ -96,8 +97,8 @@
   letter-spacing: 0.02em;
   color: #757575;
   @media screen and (min-width: 420px) {
-      font-size: 34px;
-    }
+    font-size: 34px;
+  }
 }
 
 .mobile-menu-soc {
