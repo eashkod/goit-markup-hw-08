@@ -22,7 +22,7 @@
   @include tablet {
     background-image: var(--gra), url(../images/hero-img.jpg);
     @include retina {
-      background-image: var(--gra), url(../../images/hero-Img@2x.jpg);
+      background-image: var(--gra), url(../images/hero-Img@2x.jpg);
     }
   }
 
